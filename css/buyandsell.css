@@ -1,0 +1,3237 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+
+
+html, body {
+    width: 100%;
+     height: 100vh;
+     margin: 0;
+}
+
+body {
+    font-family: lato, sans-serif;
+    font-size: 1.1em;
+    overflow: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 70px 500px 1950px 1fr;
+    grid-template-rows: 70px 500px 1950px 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    background-color: white;
+ 
+}
+
+body > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+ 
+}
+
+body > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+ 
+}
+
+body > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+ 
+}
+
+body > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+ 
+}
+
+.hideEverywhere > ul {
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+.hideEverywhere > ul > li {
+    margin: 0.5em 0 0.5em -0.3em;
+}
+
+.hideEverywhere > ul > li > button {
+    background: rgba(0, 128, 128);
+    border: 1px solid white;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-left: 0; 
+}
+
+.hideEverywhere > .hideForSmallScreen2  {
+    display: inline-block;
+    margin: -15px -15px 0 0; 
+}
+
+nav {
+     height: 83px;
+     margin: 0;
+     font-family: Arial, sans-serif;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center ;
+         -ms-flex-align: center ;
+             align-items: center ;
+     color: white;
+     -webkit-box-shadow: 0.5px 0.5px 3px rgb(128, 128, 128, 0.3);
+             box-shadow: 0.5px 0.5px 3px rgb(128, 128, 128, 0.3);
+     background: rgb(0, 128, 128, .95);
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     z-index: 9999;
+     font-size: 1.1em;
+}
+
+.hideEverywhere {
+    position: absolute;
+    width: 100%;
+    height: 350px; 
+    
+    background: rgba(0, 128, 128, .95);
+    margin: 0;
+    z-index: 2;
+    display: none;
+    top: 83px;
+   
+    -webkit-animation: hideEverywhere 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+   
+            animation: hideEverywhere 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+
+@-webkit-keyframes hideEverywhere {
+    0% {
+        top: -283px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 83px;
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes hideEverywhere {
+    0% {
+        top: -283px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 83px;
+        opacity: 1;
+    }
+}
+
+@keyframes hideEverywhere {
+    0% {
+        top: -283px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 83px;
+        opacity: 1;
+    }
+}
+
+.sceneCover {
+    position: fixed;
+    Z-index: 9999;
+    left: 69%;
+    top: 83%;
+    height: 100px;
+    width: 100px;
+}
+
+.scene {
+    position: relative;
+    height: inherit;
+    width: 80px; 
+    -webkit-perspective: 600px; 
+            perspective: 600px;
+    
+}
+
+.case {
+    height: inherit;
+    width: inherit;  
+    right: 20px;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
+    -o-transition: transform 0.7s;
+    transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+.BackToTop {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.front {
+    background: url(../img/back-to-top.svg) 0 0/ contain; 
+}
+
+.back {
+    background: url(../img/back-to-top\ -\ back.svg) 0 0/ contain;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.hideForSmallScreen1, .hideForSmallScreen2  {
+    display: none;
+}
+
+.MenuForSmallScreen {
+    background: rgb(255, 255, 255, .9);
+    border-radius: 3px;
+    margin: 8px 30px 8px auto;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+.menuLineOne, .menuLineTwo, .menuLineThree {
+    width: 27px;
+    background: rgb(0, 128, 128, .95);
+    border-radius: 6px;
+    height: 3.3px;
+    margin: 7px;
+} 
+
+.MenuForSmallScreenX {
+    background: rgb(255, 255, 255, 0);
+    margin: 8px 30px 8px auto;
+    cursor: pointer;
+    display: none;
+}
+
+.menuLineX1 {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    -webkit-transform: rotate(48deg) translate(8px, 7px);
+        -ms-transform: rotate(48deg) translate(8px, 7px);
+            transform: rotate(48deg) translate(8px, 7px);
+    -webkit-animation: menuLineX1 0.3s linear 1;
+            animation: menuLineX1 0.3s linear 1;
+}
+
+.menuLineX2 {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+    
+}
+
+.menuLineX3 {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    -webkit-transform: rotate(-48deg) translate(8px, -8px);
+        -ms-transform: rotate(-48deg) translate(8px, -8px);
+            transform: rotate(-48deg) translate(8px, -8px);
+    -webkit-animation: menuLineX3 0.3s linear 1;
+            animation: menuLineX3 0.3s linear 1;
+}
+
+
+
+
+.MenuFors900px {
+    background: rgb(255, 255, 255, 0);
+    margin: 8px 20px 8px auto;
+    cursor: pointer;
+    display: none;
+}
+
+.menuLineOnes900px {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    -webkit-transform: rotate(48deg) translate(8px, 7px);
+        -ms-transform: rotate(48deg) translate(8px, 7px);
+            transform: rotate(48deg) translate(8px, 7px);
+    -webkit-animation: menuLineX1 0.3s linear 1;
+            animation: menuLineX1 0.3s linear 1;
+}
+
+.menuLineTwos900px {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+    
+}
+
+.menuLineThrees900px {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    -webkit-transform: rotate(-48deg) translate(8px, -8px);
+        -ms-transform: rotate(-48deg) translate(8px, -8px);
+            transform: rotate(-48deg) translate(8px, -8px);
+    -webkit-animation: menuLineX3 0.3s linear 1;
+            animation: menuLineX3 0.3s linear 1;
+}
+
+@-webkit-keyframes menuLineX1 {
+    0% {
+        background: rgb(0, 128, 128, .95);
+        -webkit-transform: rotate(0deg) translate(0, 0);
+                transform: rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        background: white;
+        -webkit-transform: rotate(48deg) translate(8px, 7px);
+                transform: rotate(48deg) translate(8px, 7px);
+        opacity: 1;
+    }
+}
+
+@keyframes menuLineX1 {
+    0% {
+        background: rgb(0, 128, 128, .95);
+        -webkit-transform: rotate(0deg) translate(0, 0);
+                transform: rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        background: white;
+        -webkit-transform: rotate(48deg) translate(8px, 7px);
+                transform: rotate(48deg) translate(8px, 7px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes menuLineX3 {
+    0% {
+        background: rgb(0, 128, 128, .95);
+        -webkit-transform: rotate(0deg) translate(0, 0);
+                transform: rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        background: white;
+        -webkit-transform: rotate(-48deg) translate(8px, -8px);
+                transform: rotate(-48deg) translate(8px, -8px);
+        opacity: 1;
+    }
+}
+
+@keyframes menuLineX3 {
+    0% {
+        background: rgb(0, 128, 128, .95);
+        -webkit-transform: rotate(0deg) translate(0, 0);
+                transform: rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        background: white;
+        -webkit-transform: rotate(-48deg) translate(8px, -8px);
+                transform: rotate(-48deg) translate(8px, -8px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes optIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes optIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.menuHome {
+    position: absolute;
+    top: 11px;
+    opacity: 1;
+    left: 36px;
+    -webkit-animation: menuAll 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.menuProduct {
+    position: absolute;
+    top: 49px;
+    opacity: 1;
+    left: 36px;
+    -webkit-animation: menuAll 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@-webkit-keyframes menuAll {
+    0% {
+        opacity: 0;
+        left: 0px;
+    }
+
+
+     100% {
+        opacity: 1;
+        left: 36px;
+    }
+}
+
+@keyframes menuAll {
+    0% {
+        opacity: 0;
+        left: 0px;
+    }
+
+
+     100% {
+        opacity: 1;
+        left: 36px;
+    }
+}
+
+
+.menuAbout {
+    position: absolute;
+    top: 87px;
+    opacity: 1;
+    left: 36px;
+    -webkit-animation: menuAll 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.menuContact {
+    position: absolute;
+    top: 125px;
+    opacity: 1;
+    left: 36px;
+    -webkit-animation: menuAll 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.menuSeller {
+    position: absolute;
+    top: 170px;
+    opacity: 1;
+    left: 36px;
+    -webkit-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation: menuAll 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.menuBuyer {
+    position: absolute;
+    top: 232px;
+    opacity: 1;
+    left: 36px;
+    -webkit-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation: menuAll 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+.menuSeller:hover, .menuBuyer:hover {
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+}
+
+
+/*----------------------------*/
+
+.dontDisplay {
+    display: none;
+}
+
+
+div {
+    font-size: 1.3em;
+    margin-left: 20px;
+}
+
+.email {
+    background: url("../img/email.svg") 0 0/contain;
+    width: 45px;
+    height: 45px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.call {
+    background: url("../img/phone.svg") 0 0/contain;
+    width: 33px;
+    height: 33px;
+    margin-top: 13px;
+    margin-left: 8px;
+    position: relative;
+
+}
+
+.emailText {
+    position: absolute;
+    font-size: 19px;
+    top: -17px;
+    left: 50px;
+    width: 200px;
+    overflow: scroll;
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgb(32, 178, 170, 0.8);
+            text-decoration-color: rgb(32, 178, 170, 0.8);
+}
+
+.callNumber {
+    position: absolute;
+    font-size: 18px;
+    top: -21px;
+    left: 42px;
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgb(32, 178, 170, 0.8);
+            text-decoration-color: rgb(32, 178, 170, 0.8);
+}
+
+.st-custom-button[data-network] {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff; 
+    margin: 0;
+}
+
+.svgShare {
+    margin: 0 15px 0 0;
+}
+
+.svgShare1, .svgShare2, .svgShare3, .svgShare4 {
+    height: 27px;
+    width: 27px;
+    opacity: 0.8;
+    outline: none;
+ 
+}
+
+.svgShare1 {
+    -webkit-transition: height 0.2s ease-in-out, 
+                width 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    -o-transition: height 0.2s ease-in-out, 
+                width 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out, 
+                width 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+
+}
+
+.svgShare2 {
+    -webkit-transition: height 0.2s 0.2s ease-in-out, 
+                width 0.2s 0.2s ease-in-out,
+                opacity 0.2s 0.2s ease-in-out;
+    -o-transition: height 0.2s 0.2s ease-in-out, 
+                width 0.2s 0.2s ease-in-out,
+                opacity 0.2s 0.2s ease-in-out;
+    transition: height 0.2s 0.2s ease-in-out, 
+                width 0.2s 0.2s ease-in-out,
+                opacity 0.2s 0.2s ease-in-out;
+} 
+
+.svgShare3 {
+    -webkit-transition: height 0.2s 0.4s ease-in-out, 
+                width 0.2s 0.4s ease-in-out,
+                opacity 0.2s 0.4s ease-in-out;
+    -o-transition: height 0.2s 0.4s ease-in-out, 
+                width 0.2s 0.4s ease-in-out,
+                opacity 0.2s 0.4s ease-in-out;
+    transition: height 0.2s 0.4s ease-in-out, 
+                width 0.2s 0.4s ease-in-out,
+                opacity 0.2s 0.4s ease-in-out;
+} 
+
+.svgShare4 {
+    -webkit-transition: height 0.2s 0.6s ease-in-out, 
+                width 0.2s 0.6s ease-in-out,
+                opacity 0.2s 0.6s ease-in-out;
+    -o-transition: height 0.2s 0.6s ease-in-out, 
+                width 0.2s 0.6s ease-in-out,
+                opacity 0.2s 0.6s ease-in-out;
+    transition: height 0.2s 0.6s ease-in-out, 
+                width 0.2s 0.6s ease-in-out,
+                opacity 0.2s 0.6s ease-in-out;
+}
+
+.Logo {
+    font-family: sans-serif;
+}
+
+
+button {
+    background: rgba(4, 83, 255, .8);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 3px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: -webkit-transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.join:hover {
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+}
+
+.navRight > li > button {
+    background: rgb(255, 255, 255, .92);
+    color: teal;
+    border-radius: 3px;
+}
+
+
+main > p > button {
+    font-size: 0.95em;
+}
+
+main {
+    width: 80%;
+    color: rgb(0, 0, 0, .8);
+    margin-top: 40px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fixedContainer {
+    position: fixed;
+    height: 100vh;
+    z-index: 10000;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0px;
+    background: rgba(0, 128, 128, .3);
+    opacity: 0;
+
+}
+
+
+.contact-form-body {
+    width: 270px;
+    background: darkcyan;
+    color: white;
+    -webkit-transform: translate(15%, 15%);
+        -ms-transform: translate(15%, 15%);
+            transform: translate(15%, 15%);
+    border-radius: 5px;
+    position: relative;
+    
+   
+}
+
+.hidePassword {
+    background: url(../img/Paomedia-Small-N-Flat-Key.svg);
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 224px;
+    right: 36px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.showPassword {
+    background: url(../img/Papirus-Team-Papirus-Apps-Preferences-desktop-user-password.svg) 0 0/ contain;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 224px;
+    right: 36px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.contactForm {
+    width: 299px;
+    border: 2px solid rgb(12, 161, 161);
+    background: darkcyan;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    margin: 0 1px 0 3px;
+    top: -270px;
+    left: -71px;
+    -webkit-transition: width 1s cubic-bezier(.72, -0.61, .25, 1.51),
+                height 1s cubic-bezier(.72, -0.61, .25, 1.51);
+    -o-transition: width 1s cubic-bezier(.72, -0.61, .25, 1.51),
+                height 1s cubic-bezier(.72, -0.61, .25, 1.51);
+    transition: width 1s cubic-bezier(.72, -0.61, .25, 1.51),
+                height 1s cubic-bezier(.72, -0.61, .25, 1.51);
+}
+
+.contactFormLandscape {
+    display: none;
+}
+
+.passwordParrot {
+    cursor: text;
+    line-height: 5px;;
+
+}
+
+
+.textParrot {
+    opacity: 0.4;
+    font-size: 14px;
+    -webkit-animation: opacity 5s ease-in-out;
+            animation: opacity 5s ease-in-out;
+}
+
+.firstBoxParrot {
+    height: 8px;
+    width: 8px;
+    background: white;
+    position: absolute;
+    right: 69px;
+    bottom: 136px;
+    border-radius: 2px;
+    opacity: 0.2;
+    -webkit-animation: bottom 2s ease-in-out,  opacity 3s ease-in-out;
+            animation: bottom 2s ease-in-out,  opacity 3s ease-in-out;
+}
+
+
+@-webkit-keyframes bottom {
+    0% {
+        bottom: 139px; 
+    }
+}
+
+
+@keyframes bottom {
+    0% {
+        bottom: 139px; 
+    }
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+}
+
+.secondBoxParrot {
+    height: 8px;
+    width: 8px;
+    background: white;
+    position: absolute;
+    right: 56px;
+    bottom: 136px;
+    border-radius: 2px;
+    opacity: 0.2;
+    -webkit-animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+            animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+}
+
+.thirdBoxParrot {
+    height: 8px;
+    width: 8px;
+    background: white;
+    position: absolute;
+    right: 43px;
+    bottom: 136px;
+    border-radius: 2px;
+    opacity: 0.2;
+    -webkit-animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+            animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+}
+
+.contactForm > h2 {
+    font-size: 25px;
+    padding-top: 15px;
+    opacity: 0.8;
+    
+}
+
+.contactForm > h3 {
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+
+form {
+    margin-top: 5px;
+}
+
+
+
+.formInput {
+    width: 210px;
+    background: transparent;
+    color: white;
+    opacity: 0.8;
+    border: none;
+    border-bottom: 1.5px solid white;
+    border-radius: 0 0 0 5px;
+    font-size: 18px;
+    outline: none;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 15px 5px;
+    padding: 8px;
+    
+}
+
+
+::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+
+::-moz-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+
+:-ms-input-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+
+::-ms-input-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+.submit {
+    background: rgb(12, 161, 161);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 35px 30px 30px 30px;
+    opacity: 0.9;
+    font-size: 18px;
+    -webkit-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.submit:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 1;
+}
+
+
+.or {
+        padding: 0;
+        margin: -16px 0 0 0;
+        font-size: 17px;
+        line-height: 30px;
+}
+
+.otherSignUpOptions {
+    padding: 0;
+    margin: 0 0 -10px -50px;
+    font-size: 17px;
+    position: relative;
+}
+
+
+.fb-signup {
+    height: 30px;
+    width: 30px;
+    background: url(../img/iconfinder_facebook_386622.svg) 0 0 / contain;
+    border-radius: 4px;
+    position: absolute;
+    right: 29%;
+    bottom: 7%;
+    -webkit-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.g-signup {
+    height: 30px;
+    width: 30px;
+    background: url(../img/iconfinder_social_style_3_googleplus_341101.svg) 0 0 / contain;
+    border-radius: 4px;
+    position: absolute;
+    right: 15%;
+    bottom: 7%;
+    -webkit-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fb-signup:hover, .g-signup:hover {
+    height: 34px;
+    width: 34px;
+}
+
+.MenuForSmallScreenXform {
+    background: rgb(255, 255, 255, 0);
+    margin: 8px 30px 8px auto;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    left: 80%;
+    top: 2%;
+    opacity: 0.6;
+    z-index: 10001;
+}
+
+.menuLineX1form {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    -webkit-transform: rotate(48deg) translate(8px, 7px);
+        -ms-transform: rotate(48deg) translate(8px, 7px);
+            transform: rotate(48deg) translate(8px, 7px);
+    -webkit-animation: menuLineX1 0.3s linear 1;
+            animation: menuLineX1 0.3s linear 1;
+    
+
+}
+
+.menuLineX2form {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+    
+}
+
+.menuLineX3form {
+    width: 27px;
+    background: white;
+    border-radius: 6px;
+    height: 4px;
+    margin: 7px;
+    -webkit-transform: rotate(-48deg) translate(8px, -8px);
+        -ms-transform: rotate(-48deg) translate(8px, -8px);
+            transform: rotate(-48deg) translate(8px, -8px);
+    -webkit-animation: menuLineX3 0.3s linear 1;
+            animation: menuLineX3 0.3s linear 1;
+}
+
+
+
+
+h1 {
+    font-size: 1.7em;
+    line-height: 45px;;
+}
+
+p {
+    line-height: 40px;
+}
+
+section {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14%, white), color-stop(14%, rgb(0, 128, 128, .9)));
+    
+    background-image: -o-linear-gradient(white 14%, rgb(0, 128, 128, .9) 14%);
+    
+    background-image: linear-gradient(white 14%, rgb(0, 128, 128, .9) 14%);
+    width: auto;
+   overflow-x: none;
+   
+}
+
+.cardText {
+    color: teal;;
+    font-size: 0.85em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 30px;
+}
+
+
+
+.Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+    width: 250px;
+    height: 300px;
+    background: white;
+    border-radius: 6px;
+    -webkit-box-shadow: -0.3px -0.3px 3px grey;
+            box-shadow: -0.3px -0.3px 3px grey; 
+    margin-bottom: auto;
+    margin-left: 0px;
+    
+}
+
+
+img {
+    width: 230px;
+    height: 130px;
+    margin-left: 11px;
+    margin-right: 15px;
+    margin-top: 15%;
+    
+   
+}
+
+.imgRemargin > img {
+    margin-left: 0px;
+    width: 210px;
+}
+
+
+
+article {
+    background: rgb(0, 128, 128, .95);
+    width: 100%;
+    color: white;
+   
+ 
+   
+}
+
+.About {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+.About > h2 {
+    margin-top: 60px;
+    font-size: 1.1em;
+}
+
+.About > p {
+    font-size: smaller;
+}
+
+.Contact {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 60px;  
+}
+
+.Contact > h2 {
+    margin-top: 60px;
+    font-size: 1.1em;
+   
+}
+
+.Contact > p {
+    font-size: smaller;
+    line-height: unset;
+}
+
+
+
+footer {
+    font-size: 0.9em;
+    background: rgb(0, 128, 128, .95);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 78px;
+   width: 100%;
+   position: relative;
+
+   
+
+}
+
+
+.hideItem {
+    display: none;
+}
+
+
+.Product1 {
+    -webkit-animation: scrolled 1.8s 2;
+            animation: scrolled 1.8s 2;
+}
+
+.socials {
+    margin-top: 50px;
+}
+
+.underlinedLink {
+    text-decoration: underline;
+    
+}
+
+.hiddenText {
+    display: none;
+}
+
+
+
+@-webkit-keyframes scrolled {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+
+
+@keyframes scrolled {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+
+
+@media screen and (min-width: 320px) {
+
+    html, body {
+       
+        -ms-grid-rows: 70px 495px 1950px 1fr;
+       
+        grid-template-rows: 70px 495px 1950px 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+   }
+
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(4), body > *:nth-child(4) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+   }
+
+   ::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 80%;
+    color: rgb(0, 0, 0, .8);
+    margin-top: 40px;
+      
+}
+
+
+
+
+
+.Product1 {
+    -webkit-animation: scrolled 1.8s 2;
+            animation: scrolled 1.8s 2;
+}
+
+
+
+@-webkit-keyframes scrolled {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+
+
+@keyframes scrolled {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+}
+
+
+
+
+
+@media screen and (min-width: 460px) {
+
+    html, body {
+       
+        -ms-grid-rows: 70px 390px 1950px 1fr;
+       
+        grid-template-rows: 70px 390px 1950px 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+   }
+
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(4), body > *:nth-child(4) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+   }
+
+   ::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 80%;
+    color: rgb(0, 0, 0, .8);
+    margin-top: 40px;
+      
+}
+
+.emailText {
+  
+    width: initial;
+    overflow: none;
+}
+
+.contactForm {
+    width: 350px;
+    left: -96px;
+    
+}
+
+
+.hidePassword {
+    right: 60px;
+}
+
+.showPassword {
+    right: 60px;
+}
+
+
+.firstBoxParrot {
+    right: 91px;
+}
+
+.secondBoxParrot {
+    right: 78px;
+}
+
+.thirdBoxParrot {
+    right: 65px;
+}
+
+.fb-signup {
+    
+    right: 32%;
+}
+
+.g-signup {
+   
+    right: 20%;
+
+}
+
+
+.Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+    width: 280px;
+    
+}
+
+img {
+    width: 250px;
+    margin-left: 15px;
+}
+
+.imgRemargin > img {
+    width: 245px;
+}
+
+.sceneCover {
+    left: 74%;
+}
+
+
+.BackToTop {
+    height: 39px;
+    width: 39px;
+}
+
+.Product1 {
+    -webkit-animation: scrolled 1.8s 2;
+            animation: scrolled 1.8s 2;
+}
+
+.hiddenText {
+    display: inline;
+}
+
+
+
+@-webkit-keyframes scrolled {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+
+
+@keyframes scrolled {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    html, body {
+       
+        -ms-grid-rows: 70px 350px 1000px 1fr;
+       
+        grid-template-rows: 70px 350px 1000px 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+   }
+
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(4), body > *:nth-child(4) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+   }
+
+   ::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 80%;
+    color: rgb(0, 0, 0, .8);
+    margin-top: 40px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contactForm {
+    width: 400px;
+    left: -122px;
+    
+}
+
+
+.hidePassword {
+    right: 84px;
+}
+
+.showPassword {
+    right: 84px;
+}
+
+
+.firstBoxParrot {
+    right: 114px;
+}
+
+.secondBoxParrot {
+    right: 101px;
+}
+
+.thirdBoxParrot {
+    right: 88px;
+}
+
+.fb-signup {
+    
+    right: 34%;
+}
+
+.g-signup {
+   
+    right: 23.5%;
+
+}
+
+
+
+.Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+    width: 250px;
+    
+}
+
+img {
+    width: 230px;
+    margin-left: 15px;
+}
+
+.imgRemargin > img {
+    width: 210px;
+}
+
+.sceneCover {
+    left: 83%;
+}
+
+    section {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        justify-items: center;
+        width: 100%;
+      
+       -ms-flex-wrap: wrap;
+      
+           flex-wrap: wrap;
+
+       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(28%, white), color-stop(28%, rgb(0, 128, 128, .9)));
+
+       background-image: -o-linear-gradient(white 28%, rgb(0, 128, 128, .9) 28%);
+
+       background-image: linear-gradient(white 28%, rgb(0, 128, 128, .9) 28%);
+     
+    
+       
+    }
+
+   
+
+    .Product4, .Product5, .Product6 { 
+
+        margin-left: 30px;
+    }
+
+    .cardText {
+        color: teal;;
+        font-size: 0.85em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        margin-top: 30px;
+    }
+
+    .hideItem {
+        display: inline-block;
+    }
+
+     .Product1 {
+        -webkit-animation: scrolled600 1.8s 2;
+                animation: scrolled600 1.8s 2;
+    }
+    
+    .Product4 {
+        -webkit-animation: scrolled600 1.8s 2;
+                animation: scrolled600 1.8s 2;
+    }
+
+    .Product2, .Product3, .Product5, .Product6 {
+        -webkit-animation: none;
+                animation: none;
+    }
+    
+    
+    @-webkit-keyframes scrolled600 {
+        0% {
+            margin-top: -10px; 
+        }
+    
+        25% {
+            margin-top: 0px; 
+        }
+    
+        50% {
+            margin-top: 10px; 
+        }
+    
+        75% {
+            margin-top: 0px; 
+        }
+    
+        100% {
+            margin-top: -10px; 
+        }
+    }
+    
+    
+    @keyframes scrolled600 {
+        0% {
+            margin-top: -10px; 
+        }
+    
+        25% {
+            margin-top: 0px; 
+        }
+    
+        50% {
+            margin-top: 10px; 
+        }
+    
+        75% {
+            margin-top: 0px; 
+        }
+    
+        100% {
+            margin-top: -10px; 
+        }
+    }
+    
+    
+    
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    html, body {
+        
+        -ms-grid-rows: 70px 320px 1000px 1fr;
+        
+        grid-template-rows: 70px 320px 1000px 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+   }
+
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(4), body > *:nth-child(4) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+   }
+
+   ::-webkit-scrollbar {
+    display: none;
+}
+
+.contactForm {
+    width: 450px;
+    left: -142px;
+    
+}
+
+
+
+.hidePassword {
+    right: 110px;
+}
+
+.showPassword {
+    right: 110px;
+}
+
+
+.firstBoxParrot {
+    right: 141px;
+}
+
+.secondBoxParrot {
+    right: 128px;
+}
+
+.thirdBoxParrot {
+    right: 115px;
+}
+
+.fb-signup {
+    
+    right: 36%;
+}
+
+.g-signup {
+   
+    right: 26.5%;
+
+}
+
+
+
+
+
+img {
+    width: 250px;
+    height: 130px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15%;
+   
+}
+
+.sceneCover {
+    left: 85.5%;
+}
+
+section {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    width: 100%;
+  
+   -ms-flex-wrap: wrap;
+  
+       flex-wrap: wrap;
+
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(28%, white), color-stop(28%, rgb(0, 128, 128, .9)));
+
+   background-image: -o-linear-gradient(white 28%, rgb(0, 128, 128, .9) 28%);
+
+   background-image: linear-gradient(white 28%, rgb(0, 128, 128, .9) 28%);
+ 
+
+   
+}
+
+.Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+    width: 280px;
+    height: 300px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    -webkit-box-shadow: -0.3px -0.3px 3px grey;
+            box-shadow: -0.3px -0.3px 3px grey; 
+    margin-bottom: auto;
+    
+}
+
+.Product4, .Product5, .Product6 { 
+
+    margin-left: 90px;
+}
+
+
+    .cardText {
+        color: teal;;
+        font-size: 0.85em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        margin-top: 30px;
+    }
+
+    .Product3 {
+        -webkit-animation: scrolled768 1.8s 2;
+                animation: scrolled768 1.8s 2;
+    }
+    
+    .Product6 {
+        -webkit-animation: scrolled768 1.8s 2;
+                animation: scrolled768 1.8s 2;
+    }
+
+    .Product1, .Product2, .Product4, .Product5 {
+        -webkit-animation: none;
+                animation: none;
+    }
+    
+    
+    @-webkit-keyframes scrolled768 {
+        0% {
+            margin-top: -10px; 
+        }
+    
+        25% {
+            margin-top: 0px; 
+        }
+    
+        50% {
+            margin-top: 10px; 
+        }
+    
+        75% {
+            margin-top: 0px; 
+        }
+    
+        100% {
+            margin-top: -10px; 
+        }
+    }
+    
+    
+    @keyframes scrolled768 {
+        0% {
+            margin-top: -10px; 
+        }
+    
+        25% {
+            margin-top: 0px; 
+        }
+    
+        50% {
+            margin-top: 10px; 
+        }
+    
+        75% {
+            margin-top: 0px; 
+        }
+    
+        100% {
+            margin-top: -10px; 
+        }
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+
+    html, body {
+       
+        -ms-grid-rows: 70px 275px 680px 1fr;
+       
+        grid-template-rows: 70px 275px 680px 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+   }
+
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+   }
+
+    html > *:nth-child(4), body > *:nth-child(4) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+   }
+
+   ::-webkit-scrollbar {
+    display: none;
+}
+
+.contactForm {
+    width: 500px;
+    left: -162px;
+    
+}
+
+
+
+.hidePassword {
+    right: 135px;
+}
+
+.showPassword {
+    right: 135px;
+}
+
+
+.firstBoxParrot {
+    right: 167px;
+}
+
+.secondBoxParrot {
+    right: 153px;
+}
+
+.thirdBoxParrot {
+    right: 139px;
+}
+
+.fb-signup {
+    
+    right: 37.5%;
+}
+
+.g-signup {
+   
+    right: 29%;
+
+}
+
+
+
+
+.opt-in-options-remove {
+    display: none;
+}
+
+.hideEverywhere { 
+    height: 150px; 
+    display: none;
+}
+
+.hideEverywhere > .hideForSmallScreen2  {
+    margin: 8px 0 0 0;
+   
+}
+
+.hideEverywhere > .hideForSmallScreen2 > .s1024pxAndup  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   
+}
+
+.hideForSmallScreen1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hideForSmallScreen2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.hideForSmallScreen2 > .s1024pxAndup {
+    display: none;
+}
+
+
+
+.MenuForSmallScreen {
+    display: none;
+}
+
+.MenuForSmallScreenX {
+    display: none;
+}
+
+
+.MenuFors900px {
+    display: none;
+}
+
+.menuSeller {
+    top: 5px;
+    -webkit-animation: menuAll 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+}
+
+.menuBuyer {
+    top: 65px;
+    -webkit-animation: menuAll 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation: menuAll 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+ul {
+    color: white;
+    margin-right: 1%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    
+}
+
+li {
+    margin: 0px 10px;
+}
+
+.navRight {
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 0.9em;
+}
+
+
+.Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+    width: 250px;
+    
+}
+
+img {
+    width: 230px;
+    margin-left: 15px;
+}
+
+.imgRemargin > img {
+    width: 210px;
+}
+
+.sceneCover {
+    left: 88%;
+}
+
+section {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    width: 100%;
+  
+   -ms-flex-wrap: wrap;
+  
+       flex-wrap: wrap;
+
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(41%, white), color-stop(41%, rgb(0, 128, 128, .9)));
+
+   background-image: -o-linear-gradient(white 41%, rgb(0, 128, 128, .9) 41%);
+
+   background-image: linear-gradient(white 41%, rgb(0, 128, 128, .9) 41%);
+ 
+
+   
+}
+
+
+.Product3, .Product4, .Product5, .Product6 { 
+
+    margin-left: 20px;
+}
+
+
+.Product2 {
+    -webkit-animation: scrolled900 1.8s 2;
+            animation: scrolled900 1.8s 2;
+}
+
+.Product4 {
+    -webkit-animation: scrolled900 1.8s 2;
+            animation: scrolled900 1.8s 2;
+}
+
+.Product6 {
+    -webkit-animation: scrolled900 1.8s 2;
+            animation: scrolled900 1.8s 2;
+}
+
+.Product1, .Product3, .Product5 {
+    -webkit-animation: none;
+            animation: none;
+}
+
+
+@-webkit-keyframes scrolled900 {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+
+@keyframes scrolled900 {
+    0% {
+        margin-top: -10px; 
+    }
+
+    25% {
+        margin-top: 0px; 
+    }
+
+    50% {
+        margin-top: 10px; 
+    }
+
+    75% {
+        margin-top: 0px; 
+    }
+
+    100% {
+        margin-top: -10px; 
+    }
+}
+
+.MenuForSmallScreen {
+    display: none;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    html, body {
+         
+         -ms-grid-rows: 70px 260px 320px;
+         
+         grid-template-rows: 70px 260px 320px;
+         -ms-grid-columns: 1fr;
+         grid-template-columns: 1fr;
+    }
+    
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    body {
+    
+        font-family: lato, sans-serif;
+        font-size: 1.1em;
+       
+    }
+
+    .contactForm {
+        width: 550px;
+        left: -182px;
+        
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .hideEverywhere { 
+        display: none;
+    }
+
+
+    
+.hidePassword {
+    right: 159px;
+}
+
+.showPassword {
+    right: 159px;
+}
+
+
+.firstBoxParrot {
+    right: 193px;
+}
+
+.secondBoxParrot {
+    right: 179px;
+}
+
+.thirdBoxParrot {
+    right: 165px;
+}
+
+.fb-signup {
+    
+    right: 38.5%;
+}
+
+.g-signup {
+   
+    right: 30.5%;
+
+}
+
+    
+   
+    
+    
+    
+    
+    .navRight > li > button {
+        background: white;
+        color: teal;
+        border-radius: 3px;
+    }
+    
+    main > p > button {
+        font-size: 0.95em;
+    }
+    
+    main {
+        width: 80%;
+        color: rgb(0, 0, 0, .8);
+        margin-top: 50px;
+        position: relative;
+        margin-right: auto;
+        margin-left: 120px;
+    }
+    
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    p {
+        line-height: 40px;
+    }
+
+    .s900px {
+        display: none;
+    }
+    .s1024pxAndup {
+        display: block;
+    }
+
+    .hideForSmallScreen2 > .s1024pxAndup {
+        display: block;
+    }
+
+
+
+    .MenuForSmallScreenX {
+        display: none;
+    }
+    
+    img {
+        width: 250px;
+        height: 130px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15%;
+       
+    }
+    
+    .imgRemargin > img {
+        margin-left: 0px;
+        width: 245px;
+    }
+    
+    
+    section {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+       width: 100%;
+       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(90%, white), color-stop(90%, rgb(0, 128, 128, .9)));
+       background-image: -o-linear-gradient(white 90%, rgb(0, 128, 128, .9) 90%);
+       background-image: linear-gradient(white 90%, rgb(0, 128, 128, .9) 90%);
+        
+       overflow-x: scroll;
+    
+       
+    }
+    
+    .Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+        width: 280px;
+        height: 300px;
+        background: white;
+        margin-left: 20px;
+        margin-right: 12px;
+        border-radius: 6px;
+        -webkit-box-shadow: -0.3px -0.3px 3px grey;
+                box-shadow: -0.3px -0.3px 3px grey; 
+        margin-bottom: unset;
+        
+    }
+    
+    .Product1 {
+        -webkit-animation: scrolled1200 1.8s 2;
+                animation: scrolled1200 1.8s 2;
+    }
+
+    .Product2, .Product3, .Product4, .Product5, .Product6 {
+        -webkit-animation: none;
+                animation: none;
+    }
+    
+    @-webkit-keyframes scrolled1200 {
+        0% {
+            margin-left: 20px; 
+        }
+    
+        25% {
+            margin-left: 10px; 
+        }
+    
+        50% {
+            margin-left: 0px; 
+        }
+
+        75% {
+            margin-left: 10px; 
+        }
+    
+        100% {
+            margin-left: 20px; 
+        }
+    }
+    
+    @keyframes scrolled1200 {
+        0% {
+            margin-left: 20px; 
+        }
+    
+        25% {
+            margin-left: 10px; 
+        }
+    
+        50% {
+            margin-left: 0px; 
+        }
+
+        75% {
+            margin-left: 10px; 
+        }
+    
+        100% {
+            margin-left: 20px; 
+        }
+    }
+    
+    .cardText {
+       
+        color: teal;;
+        font-size: 0.85em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        margin-top: 30px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    
+    html, body {
+         
+         -ms-grid-rows: 70px 260px 320px;
+         
+         grid-template-rows: 70px 260px 320px;
+         -ms-grid-columns: 1fr;
+         grid-template-columns: 1fr;
+    }
+    
+    html > *:nth-child(1), body > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    
+    html > *:nth-child(2), body > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    
+    html > *:nth-child(3), body > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    body {
+    
+        font-family: lato, sans-serif;
+        font-size: 1.1em;
+       
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    
+    .contactForm {
+        width: 600px;
+        left: -202px;
+        
+    }
+
+
+        
+.hidePassword {
+    right: 186px;
+}
+
+.showPassword {
+    right: 186px;
+}
+
+
+.firstBoxParrot {
+    right: 218px;
+}
+
+.secondBoxParrot {
+    right: 204px;
+}
+
+.thirdBoxParrot {
+    right: 189px;
+}
+
+.fb-signup {
+    
+    right: 39.5%;
+}
+
+.g-signup {
+   
+    right: 32%;
+
+}  
+    
+    .navRight > li > button {
+        background: white;
+        color: teal;
+        border-radius: 3px;
+    }
+    
+    main > p > button {
+        font-size: 0.95em;
+    }
+    
+    main {
+        width: 80%;
+        color: rgb(0, 0, 0, .8);
+        margin-top: 50px;
+        position: relative;
+        margin-right: auto;
+        margin-left: 120px;
+    }
+    
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    p {
+        line-height: 40px;
+    }
+    
+    img {
+        width: 250px;
+        height: 130px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15%;
+       
+    }
+    
+    .imgRemargin > img {
+        margin-left: 0px;
+        width: 245px;
+    }
+    
+    
+    section {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+       width: 100%;
+       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(90%, white), color-stop(90%, rgb(0, 128, 128, .9)));
+       background-image: -o-linear-gradient(white 90%, rgb(0, 128, 128, .9) 90%);
+       background-image: linear-gradient(white 90%, rgb(0, 128, 128, .9) 90%);
+        
+       overflow-x: scroll;
+    
+       
+    }
+    
+    .Product1, .Product2, .Product3, .Product4, .Product5, .Product6 {
+        width: 280px;
+        height: 300px;
+        background: white;
+        margin-left: 20px;
+        margin-right: 12px;
+        border-radius: 6px;
+        -webkit-box-shadow: -0.3px -0.3px 3px grey;
+                box-shadow: -0.3px -0.3px 3px grey; 
+        margin-bottom: unset;
+        
+    }
+    
+    .Product1 {
+        -webkit-animation: scrolled1200 1.8s 2;
+                animation: scrolled1200 1.8s 2;
+    }
+
+    .Product2, .Product3, .Product4, .Product5, .Product6 {
+        -webkit-animation: none;
+                animation: none;
+    }
+    
+    @-webkit-keyframes scrolled1200 {
+        0% {
+            margin-left: 20px; 
+        }
+    
+        25% {
+            margin-left: 10px; 
+        }
+    
+        50% {
+            margin-left: 0px; 
+        }
+
+        75% {
+            margin-left: 10px; 
+        }
+    
+        100% {
+            margin-left: 20px; 
+        }
+    }
+    
+    @keyframes scrolled1200 {
+        0% {
+            margin-left: 20px; 
+        }
+    
+        25% {
+            margin-left: 10px; 
+        }
+    
+        50% {
+            margin-left: 0px; 
+        }
+
+        75% {
+            margin-left: 10px; 
+        }
+    
+        100% {
+            margin-left: 20px; 
+        }
+    }
+    
+    .cardText {
+       
+        color: teal;;
+        font-size: 0.85em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        margin-top: 30px;
+    }
+    
+}
+
+
+@media screen and (max-height: 568px) and (orientation: portrait) {
+   
+   
+    .contactForm {
+       
+        top: -235px;
+    }
+    
+
+
+}
+
+
+@media screen and (min-height: 569px) and (orientation: portrait) {
+   
+    .contactForm {
+       
+        top: -225px;
+    }
+    
+}
+
+
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+
+    .contactForm {
+        display: none;
+     }
+
+    .contactFormLandscape {
+        width: 480px;
+        border: 2px solid rgb(12, 161, 161);
+        background: darkcyan;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        margin: 0 1px 0 3px;
+        top: -135px;
+        left: -161px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+     form {
+        margin: 5px 15px 0 20px;
+    }
+
+    .form-others{
+        margin: 20px -10px 0 30px;
+    }
+
+    
+    .contactFormLandscape > .form-others > h2 {
+        font-size: 25px;
+        padding-top: 15px;
+        opacity: 0.8;
+        margin-top: 33px;
+    }
+
+
+    .contactFormLandscape > .form-others > h3 {
+        font-size: 18px;
+        opacity: 0.7;
+        font-weight: 500;
+        margin-top: -7px;
+    }
+
+    
+    .or {
+       position: absolute;
+       bottom: 35px;
+       left: 259px;
+    }
+
+    .otherSignUpOptions {
+        margin: 30px 0 0 0;
+    }
+
+
+    .fb-signup {
+        right: 25%;
+        bottom: 8%;
+    }
+
+    .g-signup {
+        right: 15%;
+        bottom: 8%;
+    }
+
+    .MenuForSmallScreenXform {
+        left: 85%;
+        top: 3%;
+    }
+
+
+    .firstBoxParrot {
+        right: 260px;
+        bottom: 33px;
+
+    }
+
+    .secondBoxParrot {
+        right: 246px;
+        bottom: 33px;
+    }
+
+    .thirdBoxParrot {
+        right: 232px;
+        bottom: 33px;
+    }
+
+    @-webkit-keyframes bottom {
+        0% {
+            bottom: 36px; 
+        }
+    }
+
+    @keyframes bottom {
+        0% {
+            bottom: 36px; 
+        }
+    }
+    
+    @-webkit-keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+    }
+
+    .hidePassword {
+        top: 104px;
+        right: 226px;
+    }
+
+    .showPassword {
+        top: 104px;
+        right: 226px;
+    }
+
+
+    .landscapeScapeSubmit {
+        position: absolute;
+        top: 154px;
+        left: 65px;
+    }
+
+        
+}
+
+
+/* This comes to rescue when browser resizes on mobile keyboard popup*/
+
+@media screen and (max-width:480px) and (max-height: 479px) {
+    
+     .hidePassword {
+        top: 224px;
+        right: 36px;
+        
+    }
+    
+    .showPassword {
+        top: 224px;
+        right: 36px;
+    }
+    
+    
+    .contactForm {
+        display: block; /**/
+        width: 299px;
+        border: 2px solid rgb(12, 161, 161);
+        background: darkcyan;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        margin: 0 1px 0 3px;
+        top: -270px;
+        left: -71px;
+    }
+    
+    .contactFormLandscape { /**/
+        display: none;
+    }
+    
+   
+    .passwordParrot {
+        cursor: text;
+        line-height: 5px;
+    
+    }
+    
+    
+    .textParrot {
+        opacity: 0.4;
+        font-size: 14px;
+        -webkit-animation: opacity 5s ease-in-out;
+                animation: opacity 5s ease-in-out;
+    }
+    
+    .firstBoxParrot {
+        height: 8px;
+        width: 8px;
+        background: white;
+        position: absolute;
+        right: 65px;
+        bottom: 137px; /**/
+        border-radius: 2px;
+        opacity: 0.2;
+        -webkit-animation: bottom 2s ease-in-out,  opacity 3s ease-in-out;
+                animation: bottom 2s ease-in-out,  opacity 3s ease-in-out;
+    }
+    
+    
+    @-webkit-keyframes bottom {
+        0% {
+            bottom: 140px; /**/
+        }
+    }
+    
+    
+    @keyframes bottom {
+        0% {
+            bottom: 140px; /**/
+        }
+    }
+    
+    @-webkit-keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+    }
+    
+    .secondBoxParrot {
+        height: 8px;
+        width: 8px;
+        background: white;
+        position: absolute;
+        right: 52px;
+        bottom: 137px; /**/
+        border-radius: 2px;
+        opacity: 0.2;
+        -webkit-animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+                animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+    }
+    
+    .thirdBoxParrot {
+        height: 8px;
+        width: 8px;
+        background: white;
+        position: absolute;
+        right: 39px;
+        bottom: 137px; /**/
+        border-radius: 2px;
+        opacity: 0.2;
+        -webkit-animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+                animation: bottom 2s ease-in-out,  opacity 5s ease-in-out;
+    }
+    
+    .contactForm > h2 {
+        font-size: 25px;
+        padding-top: 15px;
+        opacity: 0.8;
+        
+    }
+    
+    .contactForm > h3 {
+        font-size: 18px;
+        opacity: 0.7;
+        font-weight: 500;
+    }
+    
+    
+    form {
+        margin-top: 5px;
+    }
+    
+    
+    
+    .formInput {
+        width: 210px;
+        background: transparent;
+        color: white;
+        opacity: 0.8;
+        border: none;
+        border-bottom: 1.5px solid white;
+        border-radius: 0 0 0 5px;
+        font-size: 18px;
+        outline: none;
+        line-height: 25px;
+        font-family: Arial, Helvetica, sans-serif; 
+        margin: 15px 5px;
+        padding: 8px;
+        
+    }
+    
+    
+    ::-webkit-input-placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        
+    }
+    
+    
+    ::-moz-placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        
+    }
+    
+    
+    :-ms-input-placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        
+    }
+    
+    
+    ::-ms-input-placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        
+    }
+    
+    
+    ::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        
+    }
+    
+    .submit {
+        background: rgb(12, 161, 161);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin: 35px 30px 30px 30px;
+        opacity: 0.9;
+        font-size: 18px;
+        -webkit-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .submit:hover {
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
+        opacity: 1;
+    }
+    
+    
+    .or {
+            padding: 0;
+            margin: -16px 0 0 0;
+            font-size: 17px;
+            line-height: 30px;
+            bottom: 70px; /**/
+           left: 145px; /**/
+            
+    }
+    
+    .otherSignUpOptions {
+        padding: 0;
+        margin: 15px 0 -10px -50px;
+        font-size: 17px;
+        position: relative;
+    }
+    
+    
+    .fb-signup {
+        height: 30px;
+        width: 30px;
+        background: url(../img/iconfinder_facebook_386622.svg) 0 0 / contain;
+        border-radius: 4px;
+        position: absolute;
+        right: 29%;
+        bottom: 7%;
+        -webkit-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .g-signup {
+        height: 30px;
+        width: 30px;
+        background: url(../img/iconfinder_social_style_3_googleplus_341101.svg) 0 0 / contain;
+        border-radius: 4px;
+        position: absolute;
+        right: 15%;
+        bottom: 7%;
+        -webkit-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+}
+    
+   
