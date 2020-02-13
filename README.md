@@ -5,4 +5,5 @@ Github pages:
 https://ifycode.github.io/buy-and-sell-website-project/
 
 Netlify:
+
 https://ifycode-buy-and-sell-project.netlify.com/
